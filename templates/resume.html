@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revanth Sarupuru - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: #fff;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(30px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+        h1, h2, h3 {
+            color: #ffe;
+            text-shadow: 2px 2px 4px #000;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            from {text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00;}
+            to {text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;}
+        }
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li::before {
+            content: "\2022";
+            color: #ffcc00;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-left: 4px solid #ffcc00;
+            background: rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, #ffcc00, #ff9900);
+            animation: slide 2s infinite linear;
+        }
+        @keyframes slide {
+            0% {transform: translateY(-100%);}
+            100% {transform: translateY(100%);}
+        }
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills div, .projects div {
+            flex: 1 1 calc(50% - 20px);
+            margin: 10px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            transform: scale(1);
+            transition: transform 0.3s, background 0.3s;
+        }
+        .skills div:hover, .projects div:hover {
+            transform: scale(1.05);
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .contact {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Revanth Sarupuru</h1>
+            <p class="contact">Phone: +91 6300458916 | Email: <a href="mailto:sarupururevanth667@gmail.com">sarupururevanth667@gmail.com</a> | LinkedIn: <a href="https://linkedin.com/in/revanth-sarupuru-321357254">linkedin.com/in/revanth-sarupuru</a></p>
+        </header>
+        
+        <section class="section">
+            <h2>Professional Summary</h2>
+            <p>Recent Computer Science graduate with a strong foundation in cloud computing (AWS, Microsoft Azure), DevOps practices, and basic Python programming. Hands-on experience in deploying cloud environments, setting up CI/CD pipelines, and automating infrastructure tasks. Passionate about research and applying innovative solutions in Cloud and DevOps roles.</p>
+        </section>
+
+        <section class="section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>JNN Institute of Engineering (Anna University)</strong> | Computer Science | CGPA: 8.01 | 2020-2024</li>
+                <li><strong>Viswasai Junior College</strong> | Board of Intermediate Education | CGPA: 8.09 | 2018-2020</li>
+                <li><strong>Prospero E.M High School</strong> | Board of Secondary Education | CGPA: 8.27 | 2017-2018</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div><strong>AWS:</strong> EC2, VPC, IAM, Cloud Watch, Auto Scaling, Load Balancers, Route 53, S3, Elastic Beanstalk</div>
+                <div><strong>Microsoft Azure:</strong> Virtual Machines, VNET, Azure Monitor, Load Balancers, Resource Groups</div>
+                <div><strong>Quantum Computing:</strong> Understanding of quantum principles, Grover's and Shor's algorithms, Qiskit</div>
+                <div><strong>DevOps:</strong> Jenkins, GitHub Actions, Terraform, Ansible, Docker, Cloud Watch, Azure Monitor</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div><strong>Basic CI/CD Pipeline Setup with Jenkins:</strong> Configured a simple CI/CD pipeline for applications on AWS EC2 instances.</div>
+                <div><strong>Terraform-Based Infrastructure Deployment:</strong> Deployed AWS infrastructure using Terraform scripts.</div>
+                <div><strong>Azure Web App Deployment:</strong> Set up a sample web application using Azure Virtual Machines and Load Balancers.</div>
+                <div><strong>Health Diet Recommendation System:</strong> Developed a personalized diet recommendation system using data science and machine learning.</div>
+                <div><strong>Classification of Brain Stroke:</strong> Applied ML algorithms to improve early detection of brain strokes.</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Research Work and Key Achievements</h2>
+            <ul>
+                <li><strong>AI Chabot with Quantum Machine Learning:</strong> Presented at Google GEN AI Hackathon APAC Edition.</li>
+                <li><strong>Modern Education System with AI, Blockchain, and Metaverse:</strong> Presented at Hack for Change, organized by The Nudge Institute and Google.</li>
+                <li>Awarded <strong>Best Project</strong> in the Department of Computer Science and Engineering (2024).</li>
+                <li>Received <strong>Q Mercury Diploma</strong> from Summer School 2023 by Womanioum Foundation.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
